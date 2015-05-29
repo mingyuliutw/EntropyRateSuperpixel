@@ -1,8 +1,7 @@
-vc/*
 vc/x64/
 vc/Debug/
 *.tlog
 *.log
 *.obj
-
 *.dll
+*.sdf
