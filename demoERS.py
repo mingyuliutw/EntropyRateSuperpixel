@@ -1,4 +1,4 @@
-import ers
+from erspy import *
 import cv2
 import numpy as np
 
@@ -17,7 +17,7 @@ nC = 100
 img = cv2.imread("148089.jpg")
 grayImg = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 # print grayImg.shape
-seg = ers.ers()
+seg = ers()
 segmentation = seg.ComputeSegmentation(np.uint8(grayImg),nC)[0]
 
 colors = np.uint8(np.random.rand(nC,3)*255)

@@ -62,7 +62,7 @@ public:
 
 
 
-BOOST_PYTHON_MODULE(ers)
+BOOST_PYTHON_MODULE(erspy)
 {
 	boost::python::numeric::array::set_module_and_type("numpy", "ndarray");
 	import_array();
