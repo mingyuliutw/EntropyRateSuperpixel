@@ -20,7 +20,7 @@ public:
 	double lambda_;
 	double sigma_;
 	void SetLambda(double lambda) { lambda_ = lambda; };
-	void SetSigma(double lambda) { sigma_ = sigma_; };
+	void SetSigma(double sigma) { sigma_ = sigma; };
 	boost::python::object ComputeSegmentation(boost::python::numeric::array &inputImg, int nC) {
 		PyArrayObject* pyImg = (PyArrayObject*)PyArray_FROM_O(inputImg.ptr());
 		int rgbFlag = (pyImg->nd == 3) ? 1 : 0;
